@@ -193,7 +193,15 @@ html,body{
     text-transform: uppercase;
     line-height: 1.8;
     font-weight:200px;
+    -webkit-text-stroke-width: 0.3px !important;
+    -webkit-text-stroke-color: black;
 }
+
+.single-about-txt span {
+    -webkit-text-stroke-width: 0.2px !important;
+    -webkit-text-stroke-color: rgb(1, 66, 21);
+}
+
 .single-about-txt p {
     font-size: 16px;
     color: #ffffff;
@@ -293,4 +301,90 @@ html,body{
     background-position: center;
    
 
+}
+/* General Container */
+#ten-commandments {
+    background:url(../images/about/BG5.png);
+    background-size:cover;
+    background-position: center;
+
+    padding: 60px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+#ten-commandments h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    color: #ffffff; /* Golden color for the title */
+    margin-bottom: 30px;
+   
+}
+
+.commandments-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.commandment {
+    background: rgba(0, 0, 0, 0.4); /* Slightly transparent black for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.commandment:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.commandment h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #00FF7F; /* Light green color for the headers */
+    margin-bottom: 15px;
+
+}
+
+.commandment p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    #ten-commandments h2 {
+        font-size: 28px;
+    }
+    .commandment h3 {
+        font-size: 20px;
+        -webkit-text-stroke-width: 0px;
+        -webkit-text-stroke-color: black;
+    }
+    .commandment p {
+        font-size: 16px;
+        -webkit-text-stroke-width: 0px;
+        -webkit-text-stroke-color: black;
+    }
+}
+
+
+
+.divider {
+    height: 4px; /* Adjust as needed */
+    background: linear-gradient(to bottom, rgba(29, 38, 113, 0), rgba(29, 38, 113, 0.7));
+}
+
+.single-line-divider {
+    height: 2px; /* Thickness of the line */
+    width: 100%; /* Full page width */
+
+    background: linear-gradient(to right, rgba(29, 38, 113, 0), #00FF7F, rgba(29, 38, 113, 0)); /* Gradient fading into dark blue */
+    background-color: #1d2671; /* Dark blue base background */
 }
